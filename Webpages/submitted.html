@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Before Submission</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+<h1 class="display-1" style="text-align:center;">You have entered</h1>
+<div class="display-5">
+    Name: {{ name }}<br>
+    Age:{{ age }}<br>
+    Email-Id:{{ email }}<br>
+    Phone Number:{{ phone }}<br>
+    Your Query:
+</div>
+<div class="display-6">
+    <pre>{{ query }}</pre>
+    <br>
+</div>
+<div class="display-5" style="text-align:center;">
+    <button type="button" class="btn btn-success" onclick="">
+        Submit my query
+    </button>
+
+    <button type="button" class="btn btn-warning" onclick="history.back()">
+        Edit my query
+    </button>
+
+    <button type="button" class="btn btn-info" onclick="location.href='/';">
+        Submit another query
+    </button>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+</html>

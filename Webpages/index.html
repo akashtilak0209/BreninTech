@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Small Talk App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Smart Talk - Brenin Technologies</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+<form class="container" style="padding:10px;" action="submit/">
+    <div class="form-floating mb-3 mt-3">
+        <input type="text" class="form-control" id="clientName" name="fullname">
+        <label for="clientName">Enter Your Full Name</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input type="number" class="form-control" id="clientAge" name="age">
+        <label for="clientAge">Enter Your Age</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="clientEmail" name="email">
+        <label for="clientEmail">Enter Your Email-Id</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input type="tel" class="form-control" id="clientPno" pattern="[1-9]{1}[0-9]{9}" name="pno">
+        <label for="clientPno">Enter Your Phone Number</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <textarea class="form-control" style="height:200px;" id="floatingTextarea" name="query"></textarea>
+        <label for="floatingTextarea">Enter your Query</label>
+        <form action="speechrecog">
+            <button class="btn btn-light mt-3" style="height:50px; border-radius:100%; border: solid 1px black;" type="button" name="speechbtn">
+            <svg style="height:50%;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path d="M192 352c53.03 0 96-42.97 96-96v-160c0-53.03-42.97-96-96-96s-96 42.97-96 96v160C96 309 138.1 352 192 352zM344 192C330.7 192 320 202.7 320 215.1V256c0 73.33-61.97 132.4-136.3 127.7c-66.08-4.169-119.7-66.59-119.7-132.8L64 215.1C64 202.7 53.25 192 40 192S16 202.7 16 215.1v32.15c0 89.66 63.97 169.6 152 181.7V464H128c-18.19 0-32.84 15.18-31.96 33.57C96.43 505.8 103.8 512 112 512h160c8.222 0 15.57-6.216 15.96-14.43C288.8 479.2 274.2 464 256 464h-40v-33.77C301.7 418.5 368 344.9 368 256V215.1C368 202.7 357.3 192 344 192z"/>
+            </svg>
+        </button>
+        </form><br>
+
+    <button class="btn btn-success mt-3" style="height:50px; width:100%;" type="submit">
+        Submit Query
+    </button>
+        </div>
+
+</form>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+</html>
