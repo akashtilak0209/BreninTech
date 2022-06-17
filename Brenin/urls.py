@@ -22,5 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name="index"),
     path('submit/', views.submitquery, name='submit'),
-    path('speechrecog', views.speechrecog, name="speech")
+#     path('speechrecog', views.speechrecog, name="speech")
 ]
